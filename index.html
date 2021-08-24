@@ -13,7 +13,8 @@
 <!-- partial:index.partial.html -->
 <header>
  <h1 class="title"><a href="#">SEO Content Checklist 2021 cho Pensilia Team</a></h1>
-  <br/>(Sử dụng nội bộ cho team Content - Viện thẩm mỹ Pensilia - code bởi khochat.com)
+<div style="text-align: center;">(Sử dụng nội bộ cho team Content - Viện thẩm mỹ Pensilia - code bởi khochat.com)<div>
+ </div></div><br/>
  <div class="progress">
   <span class="progress__count">0/X</span>
   <input class="progress__reset" type="reset" value="Reset" title="Reset Checkboxes" tabindex="0">
