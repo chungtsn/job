@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Web Launch Checklist</title>
+  <title>SEO Checklist 2021 - Content Team Pensilia</title>
   <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Rubik:300,400,500">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
@@ -12,8 +12,8 @@
 <body>
 <!-- partial:index.partial.html -->
 <header>
- <h1 class="title"><a href="#">Web Launch Checklist</a></h1>
-  <div style="text-align: center;">(Sử dụng nội bộ cho team Content - Viện thẩm mỹ Pensilia - code bởi khochat.com)<div>
+ <h1 class="title"><a href="#">SEO Checklist 2021 - Content Team Pensilia</a></h1>
+  <div style="text-align: center;">(Sử dụng nội bộ cho team Content - Viện thẩm mỹ Pensilia - code bởi khochat.com)<div><br/>
  </div></div>
  <div class="progress">
   <span class="progress__count">0/X</span>
@@ -25,7 +25,7 @@
 </header>
 <div class="container">
  <section class="checklist">
-  <h2 class="checklist__title">Performance</h2>
+  <h2 class="checklist__title">Từ khóa SEO</h2>
   <span class="checklist__title-border"></span>
   <span class="checklist__percentage-border"></span>
   <ul class="checklist-container">
@@ -168,7 +168,7 @@
 
  </section>
  <section class="checklist">
-  <h2 class="checklist__title">SEO</h2>
+  <h2 class="checklist__title">Hình ảnh</h2>
   <span class="checklist__title-border"></span>
   <span class="checklist__percentage-border"></span>
   <ul class="checklist-container">
@@ -277,7 +277,7 @@
   </ul>
  </section>
  <section class="checklist">
-  <h2 class="checklist__title">Security</h2>
+  <h2 class="checklist__title">Code nâng cao</h2>
   <span class="checklist__title-border"></span>
   <span class="checklist__percentage-border"></span>
   <ul class="checklist-container">
@@ -356,7 +356,7 @@
   </ul>
  </section>
  <section class="checklist">
-  <h2 class="checklist__title">Accessibility</h2>
+  <h2 class="checklist__title">Khai báo tìm kiếm</h2>
   <span class="checklist__title-border"></span>
   <span class="checklist__percentage-border"></span>
   <ul class="checklist-container">
@@ -420,7 +420,7 @@
   </ul>
  </section>
  <section class="checklist">
-  <h2 class="checklist__title">Content</h2>
+  <h2 class="checklist__title">Chia sẻ mạng xã hội</h2>
   <span class="checklist__title-border"></span>
   <span class="checklist__percentage-border"></span>
   <ul class="checklist-container">
@@ -491,7 +491,7 @@
   </ul>
  </section>
  <section class="checklist">
-  <h2 class="checklist__title">Functionality</h2>
+  <h2 class="checklist__title">Kiểm tra nghiệm thu</h2>
   <span class="checklist__title-border"></span>
   <span class="checklist__percentage-border"></span>
   <ul class="checklist-container">
