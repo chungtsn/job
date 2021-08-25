@@ -6,6 +6,22 @@ const checkboxValues = JSON.parse(localStorage.getItem("checkboxValues")) || {},
 	progress = document.querySelector(".progress__bar"),
 	counter = document.querySelector(".progress__count"),
 	reset = document.querySelector(".progress__reset");
+window.onload = function() {
+	loadIds(), loadValues(), checkboxes.forEach(a =>
+		a.addEventListener("click", countChecked)
+	), buttons.forEach(a =>
+		a.addEventListener("click", toggleExpand)
+	), labels.forEach(a =>
+		a.addEventListener("click", toggleExpand)
+	), reset.addEventListener("click", resetCheckboxes), reset.addEventListener(
+		"animationend",
+		function() {
+			this.classList.remove("progress__reset--pressed");
+		},
+		!1
+	), "serviceWorker" in navigator &&
+		navigator.serviceWorker.register("./sw.js", { scope: "./" })
+};
 function loadIds() {
 	for (let a = 0; a < checkboxesLength; a += 1) {
 		const b = a => a.replace(/[ ,.!?;:'-]/g, "");
@@ -69,19 +85,3 @@ function resetCheckboxes() {
 		a => delete checkboxValues[a]
 	), countChecked();
 }
-window.onload = function() {
-	loadIds(), loadValues(), checkboxes.forEach(a =>
-		a.addEventListener("click", countChecked)
-	), buttons.forEach(a =>
-		a.addEventListener("click", toggleExpand)
-	), labels.forEach(a =>
-		a.addEventListener("click", toggleExpand)
-	), reset.addEventListener("click", resetCheckboxes), reset.addEventListener(
-		"animationend",
-		function() {
-			this.classList.remove("progress__reset--pressed");
-		},
-		!1
-	), "serviceWorker" in navigator &&
-		navigator.serviceWorker.register("./sw.js", { scope: "./" })
-};
