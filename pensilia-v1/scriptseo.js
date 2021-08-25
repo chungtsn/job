@@ -8,20 +8,23 @@ const checkboxValues = JSON.parse(localStorage.getItem("checkboxValues")) || {},
 	reset = document.querySelector(".progress__reset");
 window.onload = function() {
 	loadIds(), loadValues(), checkboxes.forEach(a =>
-		a.addEventListener("click", countChecked)
-	), buttons.forEach(a =>
-		a.addEventListener("click", toggleExpand)
-	), labels.forEach(a =>
-		a.addEventListener("click", toggleExpand)
-	), reset.addEventListener("click", resetCheckboxes), reset.addEventListener(
-		"animationend",
-		function() {
-			this.classList.remove("progress__reset--pressed");
-		},
-		!3
-	), "serviceWorker" in navigator &&
-		navigator.serviceWorker.register("./sw.js", { scope: "./" })
+			a.addEventListener("click", countChecked)
+		), buttons.forEach(a =>
+			a.addEventListener("click", toggleExpand)
+		), labels.forEach(a =>
+			a.addEventListener("click", toggleExpand)
+		), reset.addEventListener("click", resetCheckboxes), reset.addEventListener(
+			"animationend",
+			function() {
+				this.classList.remove("progress__reset--pressed");
+			},
+			!3
+		), "serviceWorker" in navigator &&
+		navigator.serviceWorker.register("./sw.js", {
+			scope: "./"
+		})
 };
+
 function loadIds() {
 	for (let a = 0; a < checkboxesLength; a += 1) {
 		const b = a => a.replace(/[ êôềôệặếảìắíóừàđọẻã%èốểứạ,.!?;:'-]/g, "");
@@ -33,18 +36,20 @@ function loadIds() {
 		);
 	}
 }
+
 function updateStorage(a) {
 	(checkboxValues[a.id] = a.checked), localStorage.setItem(
 		"checkboxValues",
 		JSON.stringify(checkboxValues)
 	);
 }
+
 function countChecked() {
 	if ("checkbox" === this.type) {
 		const a = this.parentNode.parentNode.parentNode,
 			b =
-				a.querySelectorAll("input:checked").length /
-				a.querySelectorAll(".checklist-item").length;
+			a.querySelectorAll("input:checked").length /
+			a.querySelectorAll(".checklist-item").length;
 		a.querySelector(
 			".checklist__percentage-border"
 		).style.transform = `scaleX(${b})`;
@@ -63,6 +68,7 @@ function countChecked() {
 	}), (counter.innerText = `${a}/${checkboxesLength}`), (progress.style.transform = `scaleX(${a /
 		checkboxesLength})`), (checkboxValues.globalCounter = a), updateStorage(this);
 }
+
 function loadValues() {
 	const a = checkboxValues.globalCounter || 0;
 	(counter.innerText = `${a}/${checkboxesLength}`), Object.keys(
@@ -72,12 +78,14 @@ function loadValues() {
 			(document.getElementById(a).checked = checkboxValues[a]);
 	}), countChecked();
 }
+
 function toggleExpand() {
 	const a = this.parentNode;
 	a.querySelector(".line").classList.toggle("closed"), a.classList.toggle(
 		"open"
 	);
 }
+
 function resetCheckboxes() {
 	this.classList.add("progress__reset--pressed"), checkboxes.forEach(
 		a => (a.checked = !1)
