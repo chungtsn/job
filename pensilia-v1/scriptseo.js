@@ -24,7 +24,7 @@ window.onload = function() {
 };
 function loadIds() {
 	for (let a = 0; a < checkboxesLength; a += 1) {
-		const b = a => a.replace(/[ ốểíóừ,.!?;:'-]/g, "");
+		const b = a => a.replace(/[ t,.!?;:'-]/g, "");
 		(checkboxes[a].id = `${b(
 			checkboxes[a].nextSibling.nextSibling.innerText
 		).toLowerCase()}`), checkboxes[a].nextSibling.setAttribute(
