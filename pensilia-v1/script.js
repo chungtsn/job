@@ -1,22 +1,3 @@
-(function () {
-    if (window.addEventListener) {
-        window.addEventListener('DOMContentLoaded', domReady, false);
-    } else {
-        window.attachEvent('onload', domReady);
-    }
-} ());
-
-function domReady() {
-    var add = document.getElementById('addition').checked;
-    var subs = document.getElementById('substraction').checked;
-    var multi = document.getElementById('multiplication').checked;
-    var div = document.getElementById('division').checked;
-
-    var result = 0;
-    var x = parseInt(document.getElementById('firstNumber').value);
-    var y = parseInt(document.getElementById('secondNumber').value);
-}
-
 const checkboxValues = JSON.parse(localStorage.getItem("checkboxValues")) || {},
 	buttons = Array.from(document.querySelectorAll(".checklist-item__expand")),
 	labels = Array.from(document.querySelectorAll(".checklist-item__title")),
