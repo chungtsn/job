@@ -160,7 +160,7 @@ a:hover {
   transition: transform 0.5s ease;
   transform: scaleX(0);
   transform-origin: left;
-  background: #ff9900;
+  background: #21acb3;
 }
 .container {
   display: flex;
@@ -200,7 +200,7 @@ a:hover {
   transition: transform 350ms ease;
   transform: scaleX(0);
   transform-origin: left;
-  background: #ff9900;
+  background: #57d490;
 }
 .checklist-item {
   display: block;
