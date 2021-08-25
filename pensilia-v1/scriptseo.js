@@ -18,7 +18,7 @@ window.onload = function() {
 		function() {
 			this.classList.remove("progress__reset--pressed");
 		},
-		!1
+		!3
 	), "serviceWorker" in navigator &&
 		navigator.serviceWorker.register("./sw.js", { scope: "./" })
 };
