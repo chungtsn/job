@@ -1,3 +1,4 @@
+
 const checkboxValues = JSON.parse(localStorage.getItem("checkboxValues")) || {},
 	buttons = Array.from(document.querySelectorAll(".checklist-item__expand")),
 	labels = Array.from(document.querySelectorAll(".checklist-item__title")),
