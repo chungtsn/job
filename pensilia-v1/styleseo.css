@@ -369,6 +369,7 @@ input[type=checkbox]:checked ~ .checklist-item__title {
   margin-bottom: 0.2em;
   padding-bottom: 0.75em;
   border-bottom: 1px solid #b5adde;
+  text-align: justify;
 }
 .checklist .open .info-container {
   max-height: 100%;
